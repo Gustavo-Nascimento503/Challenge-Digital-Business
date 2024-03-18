@@ -45,9 +45,5 @@ public class Fornecedor {
     @NotBlank(message = "A reputação não pode estar em branco")
     @Column(name = "REP_FORNECEDOR")
     private String reputacao;
-
-    @ManyToOne
-    @JoinColumn(name = "ID_PRODUTO") 
-    private Produto produto;
     
 }
