@@ -230,6 +230,9 @@ Aqui está um exemplo da estrutura JSON representando as informações da `usuar
 - 405: Acesso restrito ao recurso.
 - 500: Erro interno do servidor.
 
-## Diagrama de arquitetura macro
+## Como testar
 
-![Arquitetura](https://raw.githubusercontent.com/GustavoFIAP96687/Challenge-Digital-Business/master/img/Arquitetura.png)
+- 1: No postman ou insomnia importe o arquivo JSON.
+- 2: Com o arquivo importado faça o cadastro do usuario.
+- 3: Faça o login do usuario, ira gerar um token como retorno.
+- 4: Em todas as outras requisições sera necessario ativar a autenticação, ative a `Bearer token`, e cole o token em todas elas, a partir disso você tera acesso as requisições.
